@@ -14,9 +14,9 @@ function insertar(){
     if (1<4){
         i++
     }
-    document.getElementById("siguiente").setAttribute("src", imgs[i]);
+    document.getElementById("img").setAttribute("src", imgs[i]);
 }
-document.getElementById("img").addEventListener("click", anterior);
+document.getElementById("anterior").addEventListener("click", anterior);
 
 function anterior(){
     if (i>0){
