@@ -1,9 +1,9 @@
 var imgs = [
-    "img/img1.jpg",
-    "img/img2.jpg",
-    "img/img3.jpg",
-    "img/img4.jpg",
-    "img/img5.jpg"
+    "img/img1.png",
+    "img/img2.png",
+    "img/img3.png",
+    "img/img4.png",
+    "img/img5.png"
 ];
 
 var i =0;
@@ -16,10 +16,11 @@ function insertar(){
     }
     document.getElementById("siguiente").setAttribute("src", imgs[i]);
 }
-document.getElementById("anterior").addEventListener("click", anterior);
+document.getElementById("img").addEventListener("click", anterior);
 
 function anterior(){
     if (i>0){
         i--
     }
+    document.getElementById("img").setAttribute("src", imgs[i]);
 }
